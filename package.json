@@ -1,11 +1,11 @@
 {
   "name": "create-next-template",
-  "version": "1.0.0",
-  "description": "Shell script to create next js template with necessary packages in place.",
+  "version": "1.0.1",
+  "description": "Shell script to create next js template with standard packages and codes in place",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wilsonshakespeare/next-js-template"
+    "url": "https://github.com/wilsonshakespeare/create-next-template"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,6 +17,7 @@
     "colors": "^1.4.0",
     "shelljs": "^0.8.3"
   },
+  "keywords": ["next.js", "boilerplate"],
   "bin": {
     "create-react-redux-router-app": "index.js"
   },
