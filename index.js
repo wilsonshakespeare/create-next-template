@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // Note: This Run From Wherever the current process is
 
 let shell = require('shelljs');
@@ -28,7 +29,7 @@ function checkNodeVersion() {
     shell.exit(1);
   }
 
-  shell.exec('Checking Node Version:');
+  console.log('Checking Node Version:');
   const version = shell.exec('node -v').toString();
   const [major, minor, release] = version.split('.');
   const majorNum = parseInt(major.replace('v', ''), 10);
