@@ -19,7 +19,7 @@
   },
   "keywords": ["next.js", "boilerplate"],
   "bin": {
-    "create-react-redux-router-app": "index.js"
+    "create-next-template": "index.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
