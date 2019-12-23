@@ -5,8 +5,4 @@ Make sure the followings are install
 - Node Version v10
 - git
 
-run `npm install -g create-next-template`
-
-cd to the desired folder
-
-run `create-next-template your-next-app-folder`
+run `npx create-next-template` to create the repo
