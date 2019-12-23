@@ -3,11 +3,16 @@
 
 let shell = require('shelljs');
 let colors = require('colors');
+let isFilenameValid = require('valid-filename');
 
 let appName = process.argv[2];
 let appDirectory = `${process.cwd()}/${appName}`;
 
 const run = async () => {
+  if(!isFilenameValid(appName)) {
+    shell.echo('Please determine your app name or enter a valid filename');
+    shell.exit(1);
+  }
   checkNodeVersion();
   checkGit();
   mkDirAndCd();

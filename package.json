@@ -1,6 +1,6 @@
 {
   "name": "create-next-template",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shell script to create next js template with standard packages and codes in place",
   "main": "index.js",
   "repository": {
