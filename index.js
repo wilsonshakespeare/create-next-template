@@ -17,7 +17,6 @@ const run = async () => {
   checkGit();
   mkDirAndCd();
   cloneTemplate();
-  finalSetup();
   console.log('Next Js Template Successfully Created');
 };
 
@@ -61,9 +60,9 @@ function cloneTemplate() {
   console.log('Removing .git');
   shell.rm('-rf', '.git');
   console.log('Perform npm ci');
+  // Installs dependencies without breaking package-lock.json
   shell.exec('npm ci');
   console.log('Process Complete');
-  // Installs dependencies without breaking package-lock.json
   // TODO: sed replace AuthorName (whoami) and app-name in package.json
 }
 
