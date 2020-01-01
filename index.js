@@ -17,6 +17,7 @@ const run = async () => {
   checkGit();
   mkDirAndCd();
   cloneTemplate();
+  finalSetup();
   console.log('Next Js Template Successfully Created');
 };
 
@@ -59,9 +60,12 @@ function cloneTemplate() {
   shell.cd(appName);
   console.log('Removing .git');
   shell.rm('-rf', '.git');
+  console.log('Perform npm ci');
+  shell.exec('npm ci');
+  console.log('Process Complete');
   // Installs dependencies without breaking package-lock.json
-  // TODO: Add npm ci when boilerplate created
-  // shell.exec('npm ci');
+  // TODO: sed replace AuthorName (whoami) and app-name in package.json
 }
+
 
 run();
